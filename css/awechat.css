@@ -1,0 +1,9 @@
+.awechat-main {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: block;
+	height: 400;
+	width: 200;
+	background-color: #aaa;
+}
