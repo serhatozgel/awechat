@@ -1,0 +1,3 @@
+Awechat.Component = function () {
+	
+}
