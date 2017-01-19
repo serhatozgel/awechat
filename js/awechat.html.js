@@ -1,6 +1,6 @@
 function AwechatHTML() {
 
-	_event = new AwechatEvent();
+	var _sendBox = new Awechat.Component.SendBox();
 
 	this.createMain = function() {
 		return createMainDiv();
@@ -11,7 +11,7 @@ function AwechatHTML() {
 		div.className = "awechat-main";
 		div.innerHTML = "Hello";
 		div.appendChild(createChatBox());
-		div.appendChild(Awechat.Component.SendBox.create());
+		div.appendChild(_sendBox.createElement());
 		return div;
 	}
 
