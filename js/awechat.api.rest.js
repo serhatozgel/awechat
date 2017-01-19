@@ -1,4 +1,7 @@
-Awechat.Api = function () {
+Awechat.Api = Awechat.Api || function (argument) {
+};
+
+Awechat.Api.Rest = function () {
 
 	var _ajax = new Awechat.Ajax();
 

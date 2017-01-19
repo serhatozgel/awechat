@@ -1,6 +1,6 @@
-Awechat.Component.SendBox = function () {
+Awechat.Component.SendBox = function (api) {
 
-	var _api = new Awechat.Api();
+	var _api = api;
 	var _messageBox = new Awechat.Component.MessageBox;
 
 	this.createElement = function () {
@@ -34,7 +34,7 @@ Awechat.Component.SendBox = function () {
 		var sendInput = document.getElementById("awechat-send-input");
 		var sendButton = document.getElementById("awechat-send-button");
 		var message = sendInput.value;
-		var messageBox = _messageBox.createElement(message);
+		var messageBox = _messageBox.createElement(message, true);
 
 		var chatBox = document.getElementById("awechat-chat-box");
 		chatBox.appendChild(messageBox);

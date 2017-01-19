@@ -1,6 +1,7 @@
 function AwechatHTML() {
 
-	var _sendBox = new Awechat.Component.SendBox();
+	var _api = new Awechat.Api.Pusher();
+	var _sendBox = new Awechat.Component.SendBox(_api);
 
 	this.createMain = function() {
 		return createMainDiv();

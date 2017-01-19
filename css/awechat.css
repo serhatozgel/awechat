@@ -7,3 +7,11 @@
 	width: 200;
 	background-color: #aaa;
 }
+
+.sent {
+	background-color: #ccf;
+}
+
+.received {
+	background-color: #cfc;
+}
